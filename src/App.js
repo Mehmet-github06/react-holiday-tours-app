@@ -1,6 +1,6 @@
-import "./App.css";
-import Loading from "./Loading"
-import Tours from "./Tours"
+import "./App.css"
+import Loading from "./Loading";
+import Tours from "./Tours";
 import React , {useState,useEffect} from "react";
 
 const url = "http://course-api.com/react-tours-project"
