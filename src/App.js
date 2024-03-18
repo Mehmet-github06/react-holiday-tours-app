@@ -1,6 +1,6 @@
 import "./App.css";
-import loading from "./loading"
-import tours from "./tours"
+import Loading from "./Loading"
+import Tours from "./Tours"
 import React , {useState,useEffect} from "react";
 
 const url = "http://course-api.com/react-tours-project"
@@ -18,13 +18,24 @@ const fecthTours =async()=>{
     setloading(false)
     settours(tours)
   } catch (error) {
-    
+    setloading(false);
+    console.log(error)
   }
+}
+useEffect(()=>{
+  fecthTours()
+},[])
+
+if(loading){
+  return(
+    <Loading/>
+  )
+
 }
 
   return (
     <div className="App">
-    
+    <Tours/>
     </div>
   );
 }
