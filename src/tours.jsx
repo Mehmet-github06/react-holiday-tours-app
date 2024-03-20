@@ -4,7 +4,9 @@ import "./Tours.css"
 
 const Tours = () => {
   return (
-    <div>
+    <div className='title'>
+      <h2>Our Tours</h2>
+      <div className='line'></div>
       <Tour/>
     </div>
   )
