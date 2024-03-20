@@ -35,7 +35,7 @@ if(loading){
 
   return (
     <div className="App">
-    <Tours/>
+    <Tours tours={tours}/>
     </div>
   );
 }

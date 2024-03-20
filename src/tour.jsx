@@ -1,10 +1,11 @@
 import React from 'react'
+import {useState} from "react"
 
-const Tour = () => {
+const Tour = ({id,image,info,name,price}) => {
   return (
-    <div>
+    <article>
       heloo
-    </div>
+    </article>
   )
 }
 
