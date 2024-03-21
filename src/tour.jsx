@@ -3,8 +3,8 @@ import {useState} from "react"
 
 const Tour = ({id,image,info,name,price}) => {
   return (
-    <article>
-      heloo
+    <article className='single-tour'>
+      <img src={image} alt={name} />
     </article>
   )
 }
