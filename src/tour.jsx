@@ -14,7 +14,7 @@ const [readMore,setReadMore]=useState(false)
           <h4 className='tour-price'>${price}</h4>
         </div>
         <p>
-          {info}
+           {readMore ? info : `${info.substring(0,200)}...`}
         </p>
         <button className='delete-btn'>
              not interested 
