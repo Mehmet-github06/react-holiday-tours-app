@@ -15,6 +15,9 @@ const [readMore,setReadMore]=useState(false)
         </div>
         <p>
            {readMore ? info : `${info.substring(0,200)}...`}
+           <button onClick={()=> setReadMore(!readMore)}>
+             {readMore ? `show less`: `show more`}
+           </button>
         </p>
         <button className='delete-btn'>
              not interested 
