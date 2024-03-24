@@ -34,7 +34,10 @@ function App() {
 if (tours.length === 0) {
   return (
     <main>
-      
+      <div className="refresh-title">  
+       <h2>no tours left</h2>
+       <button onClick={()=>fecthTours()}>refresh</button>
+      </div>
     </main>
   )
 }
